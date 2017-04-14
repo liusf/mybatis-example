@@ -21,7 +21,7 @@ mvn migration:status
 我们使用[mybatis generator](http://www.mybatis.org/generator/)进行数据库表对应代码生成.
 
 ```
-## 使用local的mysql, root账号, alpha数据库生成代码
+## 使用local的mysql, root账号, test数据库生成代码
 ## 生成的代码位于com.tigerbrokers.templates.model.tables下
 ./generator
 ```
@@ -49,5 +49,3 @@ Mybatis Generator的配置文件在 `src/main/resources/generatorConfig.xml`. �
 
 #### DAO的单元测试
 代码中的 `DbTestCase` 是DB单元测试的基类,具体使用参看该类的注释和`src/test`下的示例 Testcase.
-
-
