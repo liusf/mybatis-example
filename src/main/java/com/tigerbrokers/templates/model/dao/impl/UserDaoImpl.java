@@ -9,6 +9,7 @@ import com.tigerbrokers.templates.model.dao.UserDao;
 import com.tigerbrokers.templates.model.tables.generated.User;
 import com.tigerbrokers.templates.model.tables.generated.UserExample;
 import com.tigerbrokers.templates.model.tables.generated.UserMapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import java.util.List;
  *
  * @author LIU Shufa
  */
+@Repository
 public class UserDaoImpl extends DaoBase implements UserDao {
 
     public List<User> getByStatus(UserStatus status) {
